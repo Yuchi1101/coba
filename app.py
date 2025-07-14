@@ -52,7 +52,7 @@ page = st.sidebar.radio("Menu", ["Beranda", "Senyawa Kimia", "Quiz"])
 if page == "Beranda":
     st.title("💡 Pengenalan Risiko dan Penanganan Senyawa Kimia")
     st.markdown("""
-    Selamat datang di aplikasi edukatif ini!
+    Asik kamu nyasar kesini, yuk liat-liat isi websitenya
 
     Aplikasi ini bertujuan untuk membantu Anda memahami **risiko**, **cara penanganan**, dan **APD** (Alat Pelindung Diri) yang diperlukan dalam bekerja dengan senyawa kimia umum.
 
