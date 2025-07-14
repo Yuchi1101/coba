@@ -10,6 +10,7 @@ senyawa_kimia = {
             "Risiko": "Korosif, menyebabkan luka bakar parah pada kulit dan mata.",
             "Penanganan": "Gunakan sarung tangan tahan asam, pelindung mata, dan lab coat.",
             "APD": "Sarung tangan karet, Googles, Masker, Respirator, Jas lab,Sepatu tertutup."
+        },
     "Asam Klorida (HCl)": {
             "Risiko": "Iritasi pada saluran pernapasan dan kulit.",
             "Penanganan": "Gunakan di area berventilasi baik, hindari uap.",
