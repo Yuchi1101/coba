@@ -10,36 +10,94 @@ senyawa_kimia = {
             "Risiko": "Korosif, menyebabkan luka bakar parah pada kulit dan mata.",
             "Penanganan": "Gunakan sarung tangan tahan asam, pelindung mata, dan lab coat.",
             "APD": "Sarung tangan karet, Googles, Masker, Respirator, Jas lab,Sepatu tertutup."
+    "Asam Klorida (HCl)": {
+            "Risiko": "Iritasi pada saluran pernapasan dan kulit.",
+            "Penanganan": "Gunakan di area berventilasi baik, hindari uap.",
+            "APD": "Sarung tangan, pelindung wajah, masker respirator."
+        },
+        "Asam Nitrat (HNO₃)": {
+            "Risiko": "Korosif dan oksidator kuat.",
+            "Penanganan": "Pisahkan dari bahan organik, gunakan di lemari asam.",
+            "APD": "Sarung tangan tahan asam, pelindung mata, jas lab."
+        },
+        "Asam Asetat (CH₃COOH)": {
+            "Risiko": "Iritasi kulit dan mata; bau menyengat.",
+            "Penanganan": "Gunakan ruang berventilasi.",
+            "APD": "Sarung tangan, pelindung mata."
         }
     },
     "Basa": {
         "Natrium Hidroksida (NaOH)": {
-            "Risiko": "Sangat korosif, menyebabkan luka bakar kimia.",
-            "Penanganan": "Hindari kontak dengan kulit. Bersihkan tumpahan dengan netralisasi.",
-            "APD": "Sarung tangan karet, Googles, Masker, Respirator, Jas lab,Sepatu tertutup."
+            "Risiko": "Sangat korosif; luka bakar kimia.",
+            "Penanganan": "Hindari kontak; netralisasi jika tumpah.",
+            "APD": "Sarung tangan, pelindung mata, jas lab."
+        },
+        "Kalium Hidroksida (KOH)": {
+            "Risiko": "Korosif dan mengiritasi.",
+            "Penanganan": "Gunakan dengan hati-hati di area berventilasi.",
+            "APD": "Sarung tangan tahan kimia, pelindung mata."
+        },
+        "Kalsium Hidroksida (Ca(OH)₂)": {
+            "Risiko": "Iritasi kulit dan mata.",
+            "Penanganan": "Hindari kontak langsung.",
+            "APD": "Sarung tangan, kacamata keselamatan."
+        },
+        "Amonia (NH₃)": {
+            "Risiko": "Iritan saluran napas dan mata.",
+            "Penanganan": "Gunakan di ruangan berventilasi.",
+            "APD": "Masker respirator, pelindung mata, sarung tangan nitril."
         }
     },
     "Pelarut Organik": {
         "Ethanol (C₂H₅OH)": {
-            "Risiko": "Cairan mudah terbakar, uapnya dapat menyebabkan pusing.",
-            "Penanganan": "Simpan di tempat sejuk dan berventilasi. Hindari nyala api.",
-            "APD": "Masker jika digunakan dalam jumlah besar, sarung tangan."
+            "Risiko": "Mudah terbakar; uap mengiritasi.",
+            "Penanganan": "Jauhkan dari api; ventilasi penuh.",
+            "APD": "Sarung tangan, masker."
+        },
+        "Aseton (C₃H₆O)": {
+            "Risiko": "Mudah terbakar; uap dapat pusing.",
+            "Penanganan": "Gunakan ruangan berventilasi.",
+            "APD": "Sarung tangan, pelindung mata."
+        },
+        "Toluena (C₇H₈)": {
+            "Risiko": "Neurotoksik, iritatif.",
+            "Penanganan": "Hindari inhalasi.",
+            "APD": "Respirator, sarung tangan."
+        },
+        "Metanol (CH₃OH)": {
+            "Risiko": "Sangat beracun jika tertelan atau terhirup.",
+            "Penanganan": "Gunakan dengan ventilasi kuat dan hindari kontak.",
+            "APD": "Respirator, sarung tangan tahan kimia."
         }
     },
     "Gas Berbahaya": {
-        "Amonia (NH₃)": {
-            "Risiko": "Bersifat iritan, dapat merusak saluran pernapasan dan mata.",
-            "Penanganan": "Gunakan di ruang berventilasi baik. Hindari kontak langsung.",
-            "APD": "Masker respirator, pelindung mata, sarung tangan nitril."
-        },
         "Klorin (Cl₂)": {
-            "Risiko": "Gas beracun, menyebabkan iritasi saluran napas.",
-            "Penanganan": "Gunakan di bawah lemari asam. Jangan hirup uapnya.",
+            "Risiko": "Gas beracun; iritasi saluran napas.",
+            "Penanganan": "Gunakan di bawah lemari asap.",
             "APD": "Respirator, pelindung mata, sarung tangan kimia."
+        },
+        "Klorida Hidrogen (HCl gas)": {
+            "Risiko": "Gas korosif; iritasi parah.",
+            "Penanganan": "Area ventilasi, hindari inhalasi.",
+            "APD": "Respirator, pelindung muka."
+        },
+        "Sulfur Dioksida (SO₂)": {
+            "Risiko": "Iritasi napas dan mata.",
+            "Penanganan": "Gunakan masker dan ventilasi.",
+            "APD": "Masker respirator, pelindung mata."
+        },
+        "Karbon Monoksida (CO)": {
+            "Risiko": "Gas tidak berwarna/baunya; mematikan.",
+            "Penanganan": "Detektor CO wajib digunakan.",
+            "APD": "Ventilasi kuat; masker tidak efektif sendiri."
+        },
+        "Gas Ozon (O₃)": {
+            "Risiko": "Iritasi paru-paru dan mata.",
+            "Penanganan": "Batasi waktu paparan.",
+            "APD": "Masker respirator, pelindung mata."
         }
     }
 }
-
 # ===================
 # Sidebar Navigation
 # ===================
