@@ -9,14 +9,14 @@ senyawa_kimia = {
         "Asam Sulfat (H₂SO₄)": {
             "Risiko": "Korosif, menyebabkan luka bakar parah pada kulit dan mata.",
             "Penanganan": "Gunakan sarung tangan tahan asam, pelindung mata, dan lab coat.",
-            "APD": "Sarung tangan karet, pelindung wajah, jas lab."
+            "APD": "Sarung tangan karet, Googles, Masker, Respirator, Jas lab,Sepatu tertutup."
         }
     },
     "Basa": {
         "Natrium Hidroksida (NaOH)": {
             "Risiko": "Sangat korosif, menyebabkan luka bakar kimia.",
             "Penanganan": "Hindari kontak dengan kulit. Bersihkan tumpahan dengan netralisasi.",
-            "APD": "Sarung tangan, pelindung mata, jas lab."
+            "APD": "Sarung tangan karet, Googles, Masker, Respirator, Jas lab,Sepatu tertutup."
         }
     },
     "Pelarut Organik": {
@@ -52,13 +52,12 @@ page = st.sidebar.radio("Menu", ["Beranda", "Senyawa Kimia", "Quiz"])
 if page == "Beranda":
     st.title("💡 Pengenalan Risiko dan Penanganan Senyawa Kimia")
     st.markdown("""
-    Asik kamu nyasar kesini, yuk liat-liat isi websitenya
+🚨 Kimia bukan cuma soal rumus, tapi juga soal *keselamatan!*  
+Kenalan yuk sama *senyawa-senyawa kimia penting*,  
+pelajari potensi bahayanya, dan cari tahu cara aman ngadepinnya 💥🛡
 
-    Aplikasi ini bertujuan untuk membantu Anda memahami **risiko**, **cara penanganan**, dan **APD** (Alat Pelindung Diri) yang diperlukan dalam bekerja dengan senyawa kimia umum.
-
-    Silakan pilih menu di sebelah kiri untuk mulai menjelajahi senyawa atau menguji pengetahuan Anda melalui quiz!
-    """)
-
+Klik menu di samping buat mulai, dan uji wawasanmu di akhir lewat kuis seru!
+""")
 # ============================
 # 2. Halaman Senyawa Kimia
 # ============================
