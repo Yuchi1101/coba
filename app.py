@@ -1,17 +1,45 @@
 import streamlit as st
 import random
+import base64
 
-# ===================
+# ====================
+# Fungsi Tambah Background
+# ====================
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as image:
+        encoded = base64.b64encode(image.read()).decode()
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("data:image/png;base64,{encoded}");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }}
+        .block-container {{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Tambahkan background bertema kimia
+add_bg_from_local("background_kimia.png")
+
+# ====================
 # Data Senyawa Kimia
-# ===================
+# ====================
 senyawa_kimia = {
     "Asam": {
         "Asam Sulfat (H₂SO₄)": {
             "Risiko": "Korosif, menyebabkan luka bakar parah pada kulit dan mata.",
             "Penanganan": "Gunakan sarung tangan tahan asam, pelindung mata, dan lab coat.",
-            "APD": "Sarung tangan karet, Googles, Masker, Respirator, Jas lab,Sepatu tertutup."
+            "APD": "Sarung tangan karet, Googles, Masker, Respirator, Jas lab, Sepatu tertutup."
         },
-    "Asam Klorida (HCl)": {
+        "Asam Klorida (HCl)": {
             "Risiko": "Iritasi pada saluran pernapasan dan kulit.",
             "Penanganan": "Gunakan di area berventilasi baik, hindari uap.",
             "APD": "Sarung tangan, pelindung wajah, masker respirator."
@@ -99,27 +127,38 @@ senyawa_kimia = {
         }
     }
 }
-# ===================
-# Sidebar Navigation
-# ===================
+
+# ====================
+# Sidebar Navigasi
+# ====================
 st.sidebar.title("🔬 Navigasi")
 page = st.sidebar.radio("Menu", ["Beranda", "Senyawa Kimia", "Quiz"])
 
-# ===================
-# 1. Halaman Beranda
-# ===================
+# ====================
+# Halaman Beranda (custom sesuai screenshot)
+# ====================
 if page == "Beranda":
-    st.title("💡 Pengenalan Risiko dan Penanganan Senyawa Kimia")
+    st.markdown("<h1 style='text-align: center; color: white;'>⚠️ Aplikasi Informasi Senyawa Kimia</h1>", unsafe_allow_html=True)
     st.markdown("""
-🚨 Kimia bukan cuma soal rumus, tapi juga soal *keselamatan!*  
-Kenalan yuk sama *senyawa-senyawa kimia penting*,  
-pelajari potensi bahayanya, dan cari tahu cara aman ngadepinnya 💥🛡
+<div style='background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 15px; color: white; font-size: 18px'>
+    <p><strong>Selamat datang!</strong> Aplikasi ini bertujuan memberikan edukasi tentang risiko, penanganan, dan perlindungan diri dari berbagai senyawa kimia berbahaya.</p>
+    
+    <p>🧪 Pelajari daftar senyawa berdasarkan golongan <br>
+    🛡 Ketahui bagaimana cara menangani bahan berbahaya dengan tepat <br>
+    🧠 Uji pengetahuanmu lewat kuis di akhir!</p>
 
-Klik menu di samping buat mulai, dan uji wawasanmu di akhir lewat kuis seru!
-""")
-# ============================
-# 2. Halaman Senyawa Kimia
-# ============================
+    <p><strong>Dibuat oleh:</strong><br>
+    Amir Nur Rauf (2420571) <br>
+    Annisa Zahra Syaepudin (2420574) <br>
+    Khaila Syahira Harpil (2420609) <br>
+    Rafly Asyqar Priana (2420644) <br>
+    Reinasty Vrilia Putri (2420650)</p>
+</div>
+""", unsafe_allow_html=True)
+
+# ====================
+# Halaman Senyawa Kimia
+# ====================
 elif page == "Senyawa Kimia":
     st.title("🧪 Daftar Senyawa Berdasarkan Golongan")
 
@@ -133,9 +172,9 @@ elif page == "Senyawa Kimia":
                 st.markdown(f"**Penanganan:** {info['Penanganan']}")
                 st.markdown(f"**APD:** {info['APD']}")
 
-# ===================
-# 3. Halaman Quiz
-# ===================
+# ====================
+# Halaman Quiz
+# ====================
 elif page == "Quiz":
     st.title("🧠 Quiz Penanganan Senyawa Kimia")
     st.markdown("Jawablah pertanyaan berikut dengan memilih jawaban yang paling tepat.")
@@ -155,7 +194,6 @@ elif page == "Quiz":
                 ]
             })
 
-    # Random satu pertanyaan
     question = random.choice(all_questions)
 
     st.subheader(question["question"])
@@ -166,4 +204,3 @@ elif page == "Quiz":
             st.success("✅ Jawaban benar!")
         else:
             st.error(f"❌ Jawaban salah. Jawaban yang benar adalah: **{question['answer']}**")
-
